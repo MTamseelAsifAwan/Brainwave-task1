@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add this to your index.css or App.css */
+/* styles.css */
+
+/* Utility classes converted to plain CSS */
+/* Reset default margin and padding on the body */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set full-height viewport */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #8b5cf6, #f472b6); /* Adjust gradient colors as needed */
+  background-size: cover; /* Ensures the background covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: linear-gradient(to bottom, #8b5cf6, #f472b6);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(to left, #8b5cf6, #f472b6);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: linear-gradient(to top, #8b5cf6, #f472b6);
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-image: linear-gradient(to bottom right, #8b5cf6, #f472b6);
+  }
+}
+
+/* Other styles for content */
+.text-white {
+  color: #fff;
+}
+
+.text-4xl {
+  font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind CSS */
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.text-lg {
+  font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
+  line-height: 1.75rem;
+}
+

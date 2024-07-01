@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add this to your index.css or App.css */
+
+.center-page-gradient {
+  @apply bg-gradient-to-r from-purple-400 via-white to-white sm:bg-gradient-to-b md:bg-gradient-to-l lg:bg-gradient-to-t xl:bg-gradient-to-br;
+}
+
+.full-page-gradient {
+  @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500;
+}
+
+@media (min-width: 640px) {
+  .full-page-gradient {
+    @apply sm:bg-gradient-to-b;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-page-gradient {
+    @apply md:bg-gradient-to-l;
+  }
+}
+
+@media (min-width: 1024px) {
+  .full-page-gradient {
+    @apply lg:bg-gradient-to-t;
+  }
+}
+
+@media (min-width: 1280px) {
+  .full-page-gradient {
+    @apply xl:bg-gradient-to-br;
+  }
+}
+
+
+
+
